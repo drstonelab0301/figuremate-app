@@ -37,18 +37,6 @@ streamlit run app.py
 
 ---
 
-## 🚀 Streamlit Cloud 무료 배포 가이드 (Deployment)
-
-자신만의 URL로 인터넷에 퍼블릭하게 서비스하고 싶다면 아래 과정을 따르세요. (무료)
-
-1. **GitHub 업로드**: 이 `app.py`, `requirements.txt`, `README.md` 파일을 본인의 GitHub Public 저장소에 업로드합니다.
-2. **Streamlit 연동**: [share.streamlit.io](https://share.streamlit.io/) 에 GitHub 계정으로 로그인합니다.
-3. **New App 생성**: `New app` 버튼을 누르고 방금 코드를 올린 저장소와 브랜치를 선택한 뒤 메인 파일로 `app.py`를 지정합니다.
-4. **App URL 설정**: 원하는 서브 도메인(예: `my-figuremate.streamlit.app`)을 설정하고 `Deploy`를 클릭합니다. 
-5. 잠시 후 배포가 완료되면, 해당 URL을 통해 모바일/PC 어디서든 나만의 AI 애널리스트 툴에 접속할 수 있습니다!
-
----
-
 ## 🛠️ 기술 스택 (Tech Stack)
 - **Frontend/Backend**: Streamlit (Python)
 - **PDF Parsing**: PyMuPDF (`fitz`)
