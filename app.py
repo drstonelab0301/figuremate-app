@@ -371,8 +371,8 @@ def render_sidebar():
     """Renders the sidebar and returns (api_key, model, extracted_data, figure_data, generate_btn)."""
     with st.sidebar:
         st.markdown("**⚙️ Settings**")
-        api_key = st.text_input("OpenAI Key", type="password", placeholder="sk-...", label_visibility="collapsed")
-
+        # api_key = st.text_input("OpenAI Key", type="password", placeholder="sk-...", label_visibility="collapsed")
+        api_key = st.secrets.get("OPENAI_API_KEY", "")
         col_s1, col_s2 = st.columns([2, 1])
         with col_s1:
             model = st.selectbox("Model", ["gpt-4o", "gpt-4o-mini"], index=0, label_visibility="collapsed")
